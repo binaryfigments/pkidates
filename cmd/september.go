@@ -57,12 +57,6 @@ var septemberCmd = &cobra.Command{
 			days2 := cert.NotAfter.Sub(dateMax).Hours() / 24
 			days2 = math.Floor(days2)
 
-			// fmt.Println(first)
-			// fmt.Println(cert.NotAfter.String())
-			// fmt.Println(days)
-			// fmt.Println(days2)
-			// fmt.Println(first, ",", cert.NotAfter.String(), ",", days, ",", days2)
-
 			fmt.Printf("%s, %s, %g, %g\n", first, cert.NotAfter.String(), days, days2)
 		}
 	},
